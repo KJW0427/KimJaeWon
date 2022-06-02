@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    /* background-color: #a4aeb0; */
+   
+}
+
+
+body{
+    width: 1280px;
+    height: 1080px;
+    background-color: #fff;
+}
+li{
+    list-style: none;
+}
+a:visited{
+    text-decoration: none;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+
+
+header{
+    width: 1280px;
+    height: 200px;
+
+}
+
+header .logo > a >  img{
+    width: 200px;
+    height: 100%;
+    margin-top: 50px;
+    float: left;
+    
+}
+
+header .menu_box{
+    width: 1080px;
+    height: 100%;
+    float: right;
+    /* background-color: crimson; */
+    
+}
+
+header .menu_box > .main_menu{
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    margin-top: 70px;
+    line-height: 30px;
+
+}
+
+header .menu_box > .main_menu > a.mm_area{
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    /* position: relative; */
+    
+    
+}
+
+header .menu_box > .main_menu > #sub_menu{
+    display: none;
+    z-index: 9999999999999999;
+    position: relative;
+    background-color: black;
+    
+    
+}
+#sub_menu > ul >li > a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#sub_menu > ul > li:hover{
+    background-color: #333;
+    text-decoration: underline;
+}
+
+#sub_menu.active{
+    display: block;
+    z-index: 99999;
+}
+
+section{
+    width: 1280px;
+    height: 680px;
+}
+
+
+section > .bodyimg > .mapimgs{
+    position: relative;
+}
+
+section > .bodyimg > .mapimgs > .woldmap > img{
+    width: 100%;
+    height: 680px;
+    z-index: 29;
+    /* display: none; */
+    position: absolute;
+    /* position: relative; */
+}
+
+/* .bodyimg > .mapimgs > .mapxy{
+    z-index: 30;
+} */
+
+.mapxy{
+
+    width: 210px;
+    height: 210px;
+}
+
+.bodyimg > .mapimgs >  .mapxy > #seoul{
+    position: absolute;
+    z-index: 99999;
+    /* margin-top: 500px; */
+
+    padding-top: 200px;
+    margin-left: 500px;
+    display: none;
+}
+
+.bodyimg > .mapimgs > .mapxy > #seoul.on{
+    display: block;
+    z-index: 9999999;
+}
+.bodyimg > .mapimgs >  .mapxy > #seoul> img{
+    width: 200px;
+    height: 200px;
+    
+    
+}
+
+
+footer{
+    width: 1280px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+footer > .imgslide{
+    width: 450px;
+    height: 200px;
+    float: left;
+    position: relative;
+    
+    /* overflow: hidden; */
+    
+}
+
+footer > .imgslide:hover{
+    opacity: 0.5;
+}
+
+footer > .imgslide  > a >  img{
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    /* overflow: hidden; */
+    
+}
+
+
+footer >  .notice{
+    float: left;
+    text-align: center;
+    width: 400px;
+    height: 150px;
+    line-height: 30px;
+
+    border: 1px solid #333;
+    
+}
+
+footer .notice .notide_head{
+    text-align: center;
+    border-bottom: 2px solid blue;
+}
+
+
+footer .notice >ul > li {
+    border-bottom: 1px solid #333;
+}
+footer .notice > ul > li:last-child{
+    border-bottom: none;
+}
+footer > .notice > ul > li > a{
+    font-size: 16px;
+}
+footer > .notice > ul > li > a> span{
+    clear: both;
+    float: right;
+    margin-right: 5px;
+    font-weight: bold;
+    
+}
+footer > .notice > ul > li:nth-child(even){
+    background-color: black;
+    
+}
+
+footer .notice > ul > li > a:hover{
+    text-decoration: underline;
+    
+}
+footer > .notice > ul > li:nth-child(even) > a{
+    color: white;
+}
+footer .sns{
+    float: right;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+footer .sns{
+    text-align: center;
+}
+
+footer > .sns > li{
+    width: 80px;
+    height: 100px;
+    display: inline-block;
+}
+
+footer .sns li>a{
+   
+    padding: 5px;
+    margin: 10px;
+}
+
+footer .sns img{
+    
+    width: 50px;
+    height: 50px;
+    
+}
+
+.sns ul li{
+    display: inline-block;
+}
+
+.sns img{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+
+.sns img:hover{
+    opacity: 0.5;
+}
+
+
+
+footer .copy{
+    width: 400px;
+    height: 100px ;
+    float: left;
+    margin: 0 auoto;
+    text-align: center;
+}
